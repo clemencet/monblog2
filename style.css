@@ -1,0 +1,210 @@
+/*--------------------------Balises HTML-------------------------*/
+
+body{
+	font-family: 'Habibi', serif;
+	background-image: url(images/old_map.png)
+}
+nav{
+	text-align: center;
+	border-top: 1px solid #BCCF9F;
+	border-bottom: 1px solid #BCCF9F;	
+	line-height: 45px;
+	margin-bottom: 15px;
+}
+section{
+	padding-right: 10px ;
+	border-right: 1px solid #BCCF9F;
+	background-color: white;
+}
+article{
+	margin-left : 5px;
+	margin-right: 5px;
+	border-width: 5px;
+}
+aside{
+	text-align: center;
+	background-color: white;
+}
+footer{
+	border: 1px;
+	border-color: #BCCF9F;
+	border-style: solid;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+h1 {
+	font-family:'Courgette';
+	color: #87244C ;
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #30162B ;
+}
+h3{
+	font-family: 'Source Sans Pro';
+	color: #30162B ;
+	font-size: 14px;
+	margin-top: none;
+	font-weight: 700;
+}
+p{
+	font-family: 'Habibi', serif;
+	text-align: left;
+	font-size: 14px;
+}
+a{
+	color: #30162B;
+	text-decoration: none;
+}
+
+/*----------------Balises combinées------------------*/
+
+nav ul a{
+	padding: 20px;
+	color: #30162B;
+}
+
+/*----------------Classes------------------------------*/
+
+.bcanard{
+	color: #3FB094;
+}
+.blue{
+	color: blue ;
+}
+.dpurple{
+	color: #30162B;
+}
+.lightgreen{
+	color: #3FB094;
+}
+.mauve{
+	color: #87244C;
+}
+.red{
+	color: red ;
+}
+.white{
+	color: white;
+}
+.bg-white{
+	background-color: white;
+}
+
+
+.absolu{
+	position: absolute;
+}
+.big{
+	font-size: 25px;
+}
+.bold{
+	font-weight: 700;
+}
+.border-bt{
+	border-bottom: 1px;
+	border-color: #BCCF9F;
+	border-style: solid;
+}
+.btn2{
+	border:none;
+	border-radius: 0%;
+	padding: 0px 0px;
+	background-color: white;
+}
+.cover {
+	line-height: 100px;
+	text-align: center;
+	background-size: cover;
+}
+.half-wide{
+	width: 50%;
+}
+.img-big{
+	height: 300px;
+}
+.img-margin{
+	margin: 20px 0px;
+}
+.left{
+	float: left;
+}
+.navbar-default{
+	border-top: 1px solid #BCCF9F;
+	border-bottom: 1px solid #BCCF9F;	
+	background-color: white;
+	border-radius: 0%;
+}
+.navbar-nav{
+	float: none;
+}
+.padding{
+	padding-top: 20px
+}
+.padding-bot{
+	padding-bottom: 20px;
+}
+.padding-sm{
+	padding-top: 5px
+}
+.margin-sr{
+	margin-right: 5px;
+}
+.margin-sl{
+	margin-left: 5px;
+}
+.relatif{
+	position: relative;
+}
+.small{
+	height: 100px;
+}
+.standard {
+	font-size: 14px;
+	font-family: "Habibi"
+}
+.twelve{
+	font-size: 12px;
+}
+.wide{
+	width: 95%;
+}
+
+/*-------------------Pseudo-classes-------------------------*/
+
+.underline:hover{
+	text-decoration: underline;
+}
+.cover:hover, a img:hover{
+	opacity: 0.6;
+}
+a:hover{
+	text-decoration:none;
+	opacity: 0.8;
+}
+
+/*---------Pseudo-éléments-----------------------*/
+
+.alinea::before{
+	margin-left: 2em;
+	content: "";
+}
+
+/*-------------------Id-----------------------------*/
+
+#turquoise{
+	background-image: url(images/turquoise_cc-jd-hancock2.jpg) ;
+}
+#violet{
+	background-image: url(images/violet_cc-matt-reinbold2.jpg) ;
+}
+#beige{
+	background-image: url(images/beige_cc-jinterwas_o.jpg) ;
+}
+
+/*----------------------mediaqueries------------*/
