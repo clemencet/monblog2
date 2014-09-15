@@ -161,6 +161,14 @@ nav ul a{
 .relatif{
 	position: relative;
 }
+.sep{
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #3FB094;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+}
 .small{
 	height: 100px;
 }
