@@ -1,3 +1,17 @@
+/*
+Theme Name: Dancing Groot
+Theme URI: http://something.com
+Author: Clémence Thomas
+Author URI: http://me-myself-and-i.com
+Description: Premier template wordpress
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: beige, green, purple
+*/
+
+
+
 /*--------------------------Balises HTML-------------------------*/
 
 body{
@@ -10,6 +24,7 @@ nav{
 	border-bottom: 1px solid #BCCF9F;	
 	line-height: 45px;
 	margin-bottom: 15px;
+	text-align: center;
 }
 section{
 	padding-right: 10px ;
@@ -37,7 +52,7 @@ h1 {
 	font-family:'Courgette';
 	color: #87244C ;
 	text-align: center;
-	font-size: 36px;
+	font-size: 56px;
 	margin-bottom: 50px;
 	margin-top: 50px;
 }
@@ -143,6 +158,9 @@ nav ul a{
 .navbar-nav{
 	float: none;
 }
+.navbar-nav > li > a{
+	color: #30162B;
+}
 .padding{
 	padding-top: 20px
 }
@@ -181,6 +199,13 @@ nav ul a{
 }
 .wide{
 	width: 95%;
+}
+.wysija-input{
+	width: 95%;
+	
+}
+.wysija-submit{
+	font-size: 14px;
 }
 
 /*-------------------Pseudo-classes-------------------------*/

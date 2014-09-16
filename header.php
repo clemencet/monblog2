@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php echo "$title" ?></title>
-	<meta name="description" content="<?php echo "$meta_description" ?>">
+	<title><?php bloginfo('name'); ?></title>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -17,14 +16,15 @@
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
+	<?php wp_head();?>
 </head>
 <body>	
 	<div class="container bg-white">
 		<div class="row"> <!--Row1-->
 			<header>
 				<div class="row">
-					<h1><a href="index.php"> Mon Blog</a></h1>
+					<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 				</div>
 				<nav class="navbar navbar-default" role="navigation">
 					<div class="container-fluid">
@@ -36,6 +36,25 @@
 					        	<span class="icon-bar"></span>
 					    	</button>
 					    </div><!--fermture navbar-header-->
+
+
+   <?php
+    wp_nav_menu( array(
+      'menu' => 'third-nav',
+      'theme_location' => 'third-nav',
+      'depth' => 2,
+      'container' => 'div',
+      'container_class' => 'collapse navbar-collapse row bold underline',
+      'container_id' => 'bs-example-navbar-collapse-1',
+      'menu_class' => 'nav navbar-nav',
+      'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+      'walker' => new wp_bootstrap_navwalker())
+    );
+  ?>
+
+
+
+
 					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						    <ul class="nav navbar-nav">
 							    <a href="blog.html" class="bold underline">Blog</a>
@@ -44,7 +63,10 @@
 								<a href="#" class="bold underline">A propos</a>
 								<a href="#" class="bold underline"><i class="fa fa-envelope-o"></i></a>
 						    </ul>
-						</div> <!--fermeture navbar collapse-->
+						</div> <!-- fermeture navbar collapse--> 
+						
+
+
 					</div><!-- fermeture container-fluid -->
 				</nav>
 			</header>
