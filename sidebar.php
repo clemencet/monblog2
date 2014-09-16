@@ -1,5 +1,4 @@
-					<aside>
-						<div class="col-md-2">
+
 					<h3>Newsletter</h3>
 						<div class="standard">
 					        <form action="index.html" method="post" class="subscribe-form">
@@ -52,7 +51,6 @@
 								      </div>
 								    </div>
 								  </div>
+								 </div>
 							</div>
 						</div> <!--fermeture padding-->
-					</aside>
-				</div> <!--fermeture 2 col-->
