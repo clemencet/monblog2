@@ -5,18 +5,19 @@ include "header.php"
 ?>
 
 
-
+			<div class="row"> <!--Row2-->
+				<div class="col-md-10">
 					<section>
 						<div class="row">
 							<div class="col-md-6">
 								<article>
-									<a href="blog.html">
+									<a href="blog.php">
 										<h2 id="turquoise" class="cover">Blog</h2>
 									</a>
 									<h3 class="text-center">Portrait de Blanche-Neige</h3>
 									<p class="mauve"><small>Posté par Clémence, le 3 septembre 2014<small></p>
 									<p class="text-justify alinea">A tout seigneur, tout honneur : la toute première princesse Disney, inspirée du célèbre conte des frères Grimm, est aussi une super potiche. Elle a tous les attributs de la princesse de conte de fée : belle, délicate, gentille et douce. Le studio lui apporte également quelques traits de personnalité qui deviennent la marque de fabrique des princesses Disney : une capacité innée à faire amie avec n’importe quelle boule de poils ou de plume et l’habitude de pousser la chansonnette pour un oui, pour un non, même – surtout ! – quand elle passe le balai. Pour que sa voix devienne tout à fait iconique, Walt Disney avait d'ailleurs fait passer à son interprète originale, Adriana Caselotti, un contrat très restrictif qui a saboté sa carrière au cinéma.</p>
-									<a href="blog-article.html" class="padding standard">Lire la suite</a>
+									<a href="blog-article.php" class="padding standard">Lire la suite</a>
 								</article>
 							</div>
 							<div class="col-md-6">
@@ -65,7 +66,7 @@ include "header.php"
 				   		<div class="padding">
 				    		<h3>Où me trouver</h3>
 				    		<div>
-				   				<a href="http://www.ljsf.fr">
+				   				<a href="http://www.ljsf.fr" target="blank">
 									<img src="images/ljsf_logo.png" alt="les j3ux sont faits" class="half-wide">
 								</a>
 							</div class="padding-sm">
