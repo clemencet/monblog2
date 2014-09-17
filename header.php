@@ -26,7 +26,7 @@
 				<div class="row">
 					<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 				</div>
-				<nav class="navbar navbar-default" role="navigation">
+				<nav class="navbar navbar-default block" role="navigation">
 					<div class="container-fluid">
 						<div class="navbar-header">
 					    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -54,16 +54,6 @@
 
 
 
-
-					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						    <ul class="nav navbar-nav">
-							    <a href="blog.html" class="bold underline">Blog</a>
-								<a href="#" class="bold underline">Fiction</a>
-								<a href="#" class="bold underline">Activité pro</a>
-								<a href="#" class="bold underline">A propos</a>
-								<a href="#" class="bold underline"><i class="fa fa-envelope-o"></i></a>
-						    </ul>
-						</div> <!-- fermeture navbar collapse--> 
 						
 
 

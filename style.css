@@ -118,6 +118,9 @@ nav ul a{
 .big{
 	font-size: 25px;
 }
+.block{
+	display: block;
+}
 .bold{
 	font-weight: 700;
 }
@@ -157,9 +160,6 @@ nav ul a{
 }
 .navbar-nav{
 	float: none;
-}
-.navbar-nav > li > a{
-	color: #30162B;
 }
 .padding{
 	padding-top: 20px
@@ -225,6 +225,18 @@ a:hover{
 	opacity: 0.8;
 }
 
+.navbar-default .navbar-nav  li  a {
+    color: #30162B;
+}
+.navbar-nav li{
+    float: none;
+    display: inline;
+}
+.nav > li > a {
+	display: inline;
+}
+
+
 /*---------Pseudo-éléments-----------------------*/
 
 .alinea::before{
@@ -245,3 +257,9 @@ a:hover{
 }
 
 /*----------------------mediaqueries------------*/
+
+@media (max-width:600px){
+	.nav > li > a {
+	display: block;
+	}
+}

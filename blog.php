@@ -60,6 +60,16 @@ include "header.php"
 								</article>					
 							</div>
 							<div class="col-md-2 col-md-offset-9 padding"><p><a href="#">Page précédente</a></p></div>
+							<?php
+							    if ( get_next_posts_link() ) {
+							      next_posts_link();
+							    }
+							  ?>
+							  <?php
+							    if ( get_previous_posts_link() ) {
+							      previous_posts_link();
+							    }
+							  ?>
 						</div><!--fermeture row3-->
 					</section>
 				</div><!--fermeture 10 col-->

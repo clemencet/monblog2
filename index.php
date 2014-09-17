@@ -3,6 +3,34 @@
 				<div class="col-md-10">
 					<section>
 						<div class="row">
+
+							  <?php if (have_posts()) : ?>												  	
+							  	<?php query_posts('cat=3&showposts=1'); ?>
+							   <?php while (have_posts()) : the_post(); ?>							   	
+							   	<div class="col-md-6">
+							   	<article>
+							   	<a href="<?php the_title(); ?><<?php echo get_permalink(); ?>"></a>							   	
+							    <h3><?php the_title(); ?></h3>
+							     <p>
+				                  <?php the_excerpt(); ?>
+				                 </p>
+								</article>
+				                 </div>						    					 							   
+ 								<?php wp_reset_query(); ?>
+								<?php endwhile; ?>							
+							<?php else: ?>
+							  <p>No posts found. :(</p>
+							<?php endif; ?>
+						
+
+
+
+
+
+							</div>
+
+
+
 							<div class="col-md-6">
 								<article>
 									<a href="blog.php">
