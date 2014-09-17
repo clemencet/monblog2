@@ -24,7 +24,7 @@ function register_my_menus() {
 add_action( 'init', 'register_my_menus' );
 
 //Relie la nav avec bootstrap
-require_once('wp-bootstrap-navwalker/wp_bootstrap_navwalker.php');
+require_once('wp_bootstrap_navwalker.php');
 
 if ( function_exists('register_sidebar') ) {
   register_sidebar(array(
