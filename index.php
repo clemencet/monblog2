@@ -7,8 +7,7 @@
 								<?php query_posts('cat=3&showposts=1'); ?>
 									<?php while (have_posts()) : the_post(); ?>							   	
 									   	<div class="col-md-6">							   	
-									   		<article>
-									   				
+									   		<article>									   				
 									   			<a href=" <?php echo get_category_link( 3 ); ?>">
 													<h2 id="turquoise" class="cover">Blog</h2>
 												</a>						   	
@@ -23,7 +22,7 @@
 						                </div>						    					 							   
 	 								<?php endwhile; ?>							
 									<?php else: ?>
-								  		<p>No posts found. :(</p>
+								  		<p>Aucun article trouvé :(</p>
 							  	<?php wp_reset_query(); ?>
 							<?php endif; ?>						
 							<?php if (have_posts()) : ?>												  	
@@ -45,7 +44,7 @@
 				                 		</div>
 									<?php endwhile; ?>							
 									<?php else: ?>
-							  			<p>No posts found. :(</p>
+							  			<p>Aucun article trouvé. :(</p>
 							  	<?php wp_reset_query(); ?>
 							<?php endif; ?>
 						</div><!--row art1-->
@@ -69,7 +68,7 @@
 				                 		</div>						    					 							   						
 									<?php endwhile; ?>							
 									<?php else: ?>
-							  			<p>No posts found. :(</p>
+							  			<p>Aucun article trouvé. :(</p>
 								<?php wp_reset_query(); ?>
 							<?php endif; ?>							
 							<div class="col-md-6">

@@ -1,8 +1,10 @@
-<?php 
-$title="Blog";
-$meta_description="Geek Unite";
-include "header.php"
+<?php
+/*
+Template Name: Dancing Groot
+*/
 ?>
+
+<?php get_header();?>
 			<div class="row"><!--row2-->
 				<div class="col-md-10">
 					<section>

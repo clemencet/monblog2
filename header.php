@@ -7,9 +7,9 @@
 	<title><?php bloginfo('name'); ?></title>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Habibi' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Vollkorn:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Henny+Penny' rel='stylesheet' type='text/css'>
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- Leave those next 4 lines if you care about users using IE8 -->
 	<!--[if lt IE 9]>
@@ -36,27 +36,19 @@
 					        	<span class="icon-bar"></span>
 					    	</button>
 					    </div><!--fermture navbar-header-->
-
-
-   <?php
-    wp_nav_menu( array(
-      'menu' => 'third-nav',
-      'theme_location' => 'third-nav',
-      'depth' => 2,
-      'container' => 'div',
-      'container_class' => 'collapse navbar-collapse row bold underline',
-      'container_id' => 'bs-example-navbar-collapse-1',
-      'menu_class' => 'nav navbar-nav',
-      'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-      'walker' => new wp_bootstrap_navwalker())
-    );
-  ?>
-
-
-
-						
-
-
+						<?php
+						    wp_nav_menu( array(
+						      'menu' => 'third-nav',
+						      'theme_location' => 'third-nav',
+						      'depth' => 2,
+						      'container' => 'div',
+						      'container_class' => 'collapse navbar-collapse row titre',
+						      'container_id' => 'bs-example-navbar-collapse-1',
+						      'menu_class' => 'nav navbar-nav',
+						      'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+						      'walker' => new wp_bootstrap_navwalker())
+						    );
+						?>
 					</div><!-- fermeture container-fluid -->
 				</nav>
 			</header>

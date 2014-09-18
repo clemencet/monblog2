@@ -15,7 +15,7 @@ Tags: beige, green, purple
 /*--------------------------Balises HTML-------------------------*/
 
 body{
-	font-family: 'Habibi', serif;
+	font-family: 'Lato', sans-serif;
 	background-image: url(images/old_map.png)
 }
 nav{
@@ -49,29 +49,28 @@ footer{
 	text-align: center;
 }
 h1 {
-	font-family:'Courgette';
+	font-family: 'Henny Penny', cursive;
 	color: #87244C ;
 	text-align: center;
-	font-size: 56px;
+	font-size: 60px;
 	margin-bottom: 50px;
 	margin-top: 50px;
 }
 h2{
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Vollkorn', serif;
 	color: #30162B ;
 }
 h3{
-	font-family: 'Source Sans Pro';
+	font-family: 'Vollkorn', serif;
 	color: #30162B ;
-	font-size: 14px;
+	font-size: 20px;
 	margin-top: none;
-	font-weight: 700;
 	text-align: center;
 }
 p{
-	font-family: 'Habibi', serif;
+	font-family: 'Lato', sans-serif;
 	text-align: left;
-	font-size: 14px;
+	font-size: 16px;
 }
 a{
 	color: #30162B;
@@ -150,8 +149,17 @@ nav ul a{
 .img-margin{
 	margin: 20px 0px;
 }
+.label{
+	display: inline;
+}
 .left{
 	float: left;
+}
+.margin-sr{
+	margin-right: 5px;
+}
+.margin-sl{
+	margin-left: 5px;
 }
 .navbar-default{
 	border-top: 1px solid #BCCF9F;
@@ -165,24 +173,28 @@ nav ul a{
 .padding{
 	padding-top: 20px
 }
+.no-padding{
+	padding-right: 0px;
+	padding-left: 0px;
+}
 .padding-bot{
 	padding-bottom: 20px;
 }
 .padding-sm{
 	padding-top: 5px
 }
-.margin-sr{
-	margin-right: 5px;
-}
-.margin-sl{
-	margin-left: 5px;
-}
-.no-padding{
-	padding-right: 0px;
-	padding-left: 0px;
-}
 .relatif{
 	position: relative;
+}
+.screen-reader-text{
+	font-family: 'Vollkorn', serif;
+	color: #30162B ;
+	font-size: 20px;
+	margin-top: none;
+	text-align: center;
+	font-weight: 400;
+	margin-top: 20px;
+	display: none;
 }
 .sep{
 	border-bottom: 1px;
@@ -196,8 +208,15 @@ nav ul a{
 	height: 100px;
 }
 .standard {
-	font-size: 14px;
-	font-family: "Habibi"
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+.comment-reply-title{
+	text-align: left;
+}
+.titre {
+	font-family: 'Vollkorn', serif;
+	font-size: 18px;
 }
 .twelve{
 	font-size: 12px;
@@ -206,8 +225,7 @@ nav ul a{
 	width: 95%;
 }
 .wysija-input{
-	width: 95%;
-	
+	width: 95%;	
 }
 .wysija-submit{
 	font-size: 14px;
@@ -255,6 +273,9 @@ a:hover{
 }
 #beige{
 	background-image: url(images/beige_cc-jinterwas_o.jpg) ;
+}
+#searchsubmit{
+	margin-top: 5px;
 }
 
 /*----------------------mediaqueries------------*/
