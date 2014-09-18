@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: Dancing Groot
-*/
-?>
-
 <?php get_header();?>
 			<div class="row"> <!--Row2-->
 				<div class="col-md-10">

@@ -16,7 +16,10 @@ Tags: beige, green, purple
 
 body{
 	font-family: 'Lato', sans-serif;
-	background-image: url(images/old_map.png)
+	background-image: url(images/greyfloral.png)
+}
+header {
+	background-image: url(images/greyfloral.png);
 }
 nav{
 	text-align: center;
@@ -29,7 +32,7 @@ nav{
 section{
 	padding-right: 10px ;
 	border-right: 1px solid #BCCF9F;
-	background-color: white;
+	/*background-color: black;*/
 }
 article{
 	margin-left : 5px;
@@ -57,7 +60,7 @@ h1 {
 	margin-top: 50px;
 }
 h2{
-	font-family: 'Vollkorn', serif;
+	font-family: 'Henny Penny', cursive;
 	color: #30162B ;
 }
 h3{
@@ -96,7 +99,7 @@ nav ul a{
 	color: #30162B;
 }
 .lightgreen{
-	color: #3FB094;
+	color: #BCCF9F;
 }
 .mauve{
 	color: #87244C;
@@ -114,6 +117,12 @@ nav ul a{
 
 .absolu{
 	position: absolute;
+}
+.attachment-post-thumbnail {
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	text-align: center;
 }
 .big{
 	font-size: 25px;
@@ -134,6 +143,9 @@ nav ul a{
 	border-radius: 0%;
 	padding: 0px 0px;
 	background-color: white;
+}
+.burton{
+	font-family: 'Henny Penny', cursive;
 }
 .cover {
 	line-height: 100px;
@@ -169,6 +181,10 @@ nav ul a{
 }
 .navbar-nav{
 	float: none;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	background-color: #87244C;
+	color: white;
 }
 .padding{
 	padding-top: 20px
@@ -244,6 +260,13 @@ a:hover{
 	opacity: 0.8;
 }
 
+a:hover, a:focus {
+	color: #3FB094;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #3FB094;
+}
+
 .navbar-default .navbar-nav  li  a {
     color: #30162B;
 }
@@ -266,7 +289,7 @@ a:hover{
 /*-------------------Id-----------------------------*/
 
 #turquoise{
-	background-image: url(images/turquoise_cc-jd-hancock2.jpg) ;
+	background-image: url(images/patternhead53clear-thumb.png) ;
 }
 #violet{
 	background-image: url(images/violet_cc-matt-reinbold2.jpg) ;

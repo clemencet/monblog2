@@ -1,4 +1,3 @@
-
 					<h3>Newsletter</h3>
 						<div class="standard">
 					        <form action="index.html" method="post" class="subscribe-form">
