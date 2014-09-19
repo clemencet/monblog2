@@ -24,7 +24,12 @@
 		<div class="row"> <!--Row1-->
 			<header>
 				<div class="row">
-					<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+				<?php
+					if ( is_home() ) : ?> 
+						<h1 class="title-home"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+					<?php else : ?> 
+						<h2 class="title-home"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h2>
+					<?php endif; ?>
 				</div>
 				<nav class="navbar navbar-default" role="navigation">
 					<div class="container-fluid">
@@ -44,7 +49,7 @@
 						      'container' => 'div',
 						      'container_class' => 'collapse navbar-collapse row titre',
 						      'container_id' => 'bs-example-navbar-collapse-1',
-						      'menu_class' => 'nav navbar-nav burton',
+						      'menu_class' => 'nav navbar-nav burton title-nav',
 						      'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
 						      'walker' => new wp_bootstrap_navwalker())
 						    );

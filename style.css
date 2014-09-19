@@ -23,11 +23,10 @@ header {
 }
 nav{
 	text-align: center;
-	border-top: 1px solid #BCCF9F;
-	border-bottom: 1px solid #BCCF9F;	
-	line-height: 45px;
+	line-height: 63px;
 	margin-bottom: 15px;
 	text-align: center;
+	background-image: url(images/green_dust_scratch.png);
 }
 section{
 	padding-right: 10px ;
@@ -37,38 +36,16 @@ section{
 article{
 	margin-left : 5px;
 	margin-right: 5px;
-	border-width: 5px;
 }
 aside{
 	text-align: center;
 	background-color: white;
 }
 footer{
-	border: 1px;
-	border-color: #BCCF9F;
-	border-style: solid;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;
-}
-h1 {
-	font-family: 'Henny Penny', cursive;
-	color: #87244C ;
-	text-align: center;
-	font-size: 60px;
-	margin-bottom: 50px;
-	margin-top: 50px;
-}
-h2{
-	font-family: 'Henny Penny', cursive;
-	color: #30162B ;
-}
-h3{
-	font-family: 'Vollkorn', serif;
-	color: #30162B ;
-	font-size: 20px;
-	margin-top: none;
-	text-align: center;
+	background-image: url(images/green_dust_scratch.png);
 }
 p{
 	font-family: 'Lato', sans-serif;
@@ -147,10 +124,25 @@ nav ul a{
 .burton{
 	font-family: 'Henny Penny', cursive;
 }
+.comment-meta {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.comment-reply-title{
+	font-size: 16px;
+	text-align: left
+}
 .cover {
 	line-height: 100px;
 	text-align: center;
-	background-size: cover;
+}
+.execphpwidget h3{
+	font-size: 18px;
+	font-family: 'Vollkorn', serif;
+	color: #87244C;
+}
+.form-allowed-tags{
+	display: none;
 }
 .half-wide{
 	width: 50%;
@@ -174,10 +166,9 @@ nav ul a{
 	margin-left: 5px;
 }
 .navbar-default{
-	border-top: 1px solid #BCCF9F;
-	border-bottom: 1px solid #BCCF9F;	
 	background-color: white;
 	border-radius: 0%;
+	border: none;
 }
 .navbar-nav{
 	float: none;
@@ -186,12 +177,12 @@ nav ul a{
 	background-color: #87244C;
 	color: white;
 }
-.padding{
-	padding-top: 20px
-}
 .no-padding{
 	padding-right: 0px;
 	padding-left: 0px;
+}
+.padding{
+	padding-top: 20px
 }
 .padding-bot{
 	padding-bottom: 20px;
@@ -227,12 +218,31 @@ nav ul a{
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 }
-.comment-reply-title{
-	text-align: left;
+.title-home{
+	font-family: 'Henny Penny', cursive;
+	color: #87244C ;
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
-.titre {
+.title-post{
 	font-family: 'Vollkorn', serif;
+	color: #87244C;
+	font-size: 22px;
+	margin-top: none;
+	text-align: center;
+}
+.title-category{
+	font-family: 'Henny Penny', cursive;
+	color: #30162B ;
+}
+.title-nav{
+	font-size: 20px;
+}
+.title-sidebar{
 	font-size: 18px;
+	font-family: 'Vollkorn', serif;
 }
 .twelve{
 	font-size: 12px;
@@ -244,40 +254,55 @@ nav ul a{
 	width: 95%;	
 }
 .wysija-submit{
-	font-size: 14px;
+	font-size: 16px;
+	background-color: #87244C;
+	border : none;
+	border-radius: 10%;
+	line-height: 25px;
+	font-family: 'Vollkorn', serif;
+	color: white;
+}
+.widget_wysija h3{
+	font-size: 18px;
+	font-family: 'Vollkorn', serif;
+	color: #87244C;
 }
 
 /*-------------------Pseudo-classes-------------------------*/
 
-.underline:hover{
-	text-decoration: underline;
+a:hover{
+	text-decoration:none;
+	opacity: 0.8;
+
+}
+a:hover, a:focus {
+	color: #3FB094;
+}
+.title-home:hover{
+	color: #3FB094;
+}
+.title-post:hover{
+	color: #3FB094;
 }
 .cover:hover, a img:hover{
 	opacity: 0.6;
 }
-a:hover{
-	text-decoration:none;
-	opacity: 0.8;
+.nav > li > a {
+	display: inline;
 }
-
-a:hover, a:focus {
-	color: #3FB094;
+.navbar-default .navbar-nav  li  a {
+    color: #30162B;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 	color: #3FB094;
-}
-
-.navbar-default .navbar-nav  li  a {
-    color: #30162B;
 }
 .navbar-nav li{
     float: none;
     display: inline;
 }
-.nav > li > a {
-	display: inline;
+.underline:hover{
+	text-decoration: underline;
 }
-
 
 /*---------Pseudo-éléments-----------------------*/
 
@@ -290,15 +315,27 @@ a:hover, a:focus {
 
 #turquoise{
 	background-image: url(images/patternhead53clear-thumb.png) ;
+	border-radius: 50%;
 }
 #violet{
-	background-image: url(images/violet_cc-matt-reinbold2.jpg) ;
+	background-image: url(images/violet_cc-matt-reinbold3.jpg) ;
+	background-size: cover;
+	border-radius: 50%;
+	color: #3FB094;
 }
 #beige{
-	background-image: url(images/beige_cc-jinterwas_o.jpg) ;
+	background-image: url(images/vichy2.png) ;
+	border-radius: 50%;
 }
 #searchsubmit{
 	margin-top: 5px;
+	font-size: 16px;
+	background-color: #87244C;
+	border : none;
+	border-radius: 10%;
+	line-height: 25px;
+	font-family: 'Vollkorn', serif;
+	color: white;
 }
 
 /*----------------------mediaqueries------------*/

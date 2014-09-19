@@ -9,11 +9,11 @@
 									   	<div class="col-md-6">							   	
 									   		<article>									   				
 									   			<a href=" <?php echo get_category_link( 3 ); ?>">
-													<h2 id="turquoise" class="cover">Blog</h2>
+													<h2 id="turquoise" class="cover title-category">Blog</h2>
 												</a>						   	
-									    		<a href="<?php the_title(); ?><<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+									    		<a href="<?php the_title(); ?><<?php echo get_permalink(); ?>"><h3 class="title-post"><?php the_title(); ?></h3></a>
 									     		<p>
-									     			<small>Ecrit par <?php the_author();?> le <?php the_time( get_option( 'date_format' ) ); ?> </small>
+									     			<small><em>Ecrit par <?php the_author();?> le <?php the_time( get_option( 'date_format' ) ); ?> </em></small>
 									     		</p>
 									     		<p>
 						                			<?php the_excerpt(); ?>
@@ -31,11 +31,11 @@
 							   			<div class="col-md-6">
 							   				<article>							   					
 							   					<a href=" <?php echo get_category_link( 4 ); ?> ">
-													<h2 class="cover mauve" id="violet">Fiction</h2>
+													<h2 class="cover bcanard title-category" id="violet">Fiction</h2>
 												</a>								   										
-							    				<a href="<?php the_title(); ?><<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+							    				<a href="<?php the_title(); ?><<?php echo get_permalink(); ?>"><h3 class="title-post"><?php the_title(); ?></h3></a>
 							    				<p>
-							    					<small>Ecrit par <?php the_author();?> le <?php the_time( get_option( 'date_format' ) ); ?> </small>
+							    					<small><em>Ecrit par <?php the_author();?> le <?php the_time( get_option( 'date_format' ) ); ?></em></small>
 							    				</p>
 							     				<p>
 				                  					<?php the_excerpt(); ?>
@@ -55,11 +55,11 @@
 							   			<div class="col-md-6">
 							   				<article>
 							   					<a href=" <?php echo get_category_link( 5 ); ?> ">
-													<h2 id="beige" class="cover">Activités pro</h2>
+													<h2 id="beige" class="cover title-category">Activités pro</h2>
 												</a>						   								   	
-							    				<a href="<?php the_title(); ?><<?php echo get_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+							    				<a href="<?php the_title(); ?><<?php echo get_permalink(); ?>"><h3 class="title-post"><?php the_title(); ?></h3></a>
 							    				<p>
-							    					<small>Ecrit par <?php the_author();?> le <?php the_time( get_option( 'date_format' ) ); ?> </small>
+							    					<small><em>Ecrit par <?php the_author();?> le <?php the_time( get_option( 'date_format' ) ); ?></em></small>
 							    				</p>
 							     				<p>
 				                					<?php the_excerpt(); ?>
@@ -74,7 +74,7 @@
 							<div class="col-md-6">
 								<article>
 									<a href="<?php echo get_permalink( 6 ); ?>" class="cover">
-										<h2>A propos</h2>
+										<h2 class="title-category">A propos</h2>
 									</a>
 									<p class="text-justify alinea">Mox dicta finierat, multitudo omnis ad, quae imperator voluit, promptior laudato consilio consensit in pacem ea ratione maxime percita, quod norat expeditionibus crebris fortunam eius in malis tantum civilibus vigilasse, cum autem bella moverentur externa, accidisse plerumque luctuosa, icto post haec foedere gentium ritu perfectaque sollemnitate imperator Mediolanum ad hiberna discessit.</p>								
 									<a href="#" class="padding standard">Lire la suite</a>

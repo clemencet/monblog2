@@ -7,7 +7,7 @@ Template Name: Dancing Groot
 <?php get_header();?>
 			<div class="row"> <!--Row2-->
 				<div class="col-md-10">
-					<section>
+					<section class="clearfix">
 						<?php if (have_posts()) : ?>				   	
 							<?php while (have_posts()) : the_post(); ?>							   	
 						   		<div class="col-md-11">
