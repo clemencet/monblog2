@@ -262,6 +262,9 @@ nav ul a{
 	font-family: 'Vollkorn', serif;
 	color: white;
 }
+.widget_wysija_cont .wysija-submit {
+	margin-top: none;
+}
 .widget_wysija h3{
 	font-size: 18px;
 	font-family: 'Vollkorn', serif;
@@ -315,17 +318,17 @@ a:hover, a:focus {
 
 #turquoise{
 	background-image: url(images/patternhead53clear-thumb.png) ;
-	border-radius: 50%;
+	border-radius: 25%;
 }
 #violet{
 	background-image: url(images/violet_cc-matt-reinbold3.jpg) ;
 	background-size: cover;
-	border-radius: 50%;
+	border-radius: 25%;
 	color: #3FB094;
 }
 #beige{
 	background-image: url(images/vichy2.png) ;
-	border-radius: 50%;
+	border-radius: 10%;
 }
 #searchsubmit{
 	margin-top: 5px;

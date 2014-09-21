@@ -1,8 +1,9 @@
 .widget_wysija_cont .wysija-submit{
-	margin-top: 5px;
 	text-align: center;
 	display: inline;
+	margin-top: none;
 }
+
 
 .wysija-input{
 	width: 100%;
